@@ -41,11 +41,3 @@ For production environment.
 npm run start
 Configure .env file to target MQTT, RabbitMQ, MongoDB & MariaDB production server.
 ```
-## Helpers
-
-MongoDB Client Dashboard URL
-http://10.130.142.53:8085/
-
-creadential For development environment.
-Username : admin
-Password : mongo
