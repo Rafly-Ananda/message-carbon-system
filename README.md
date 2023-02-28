@@ -1,10 +1,7 @@
 # Message Carbon Backend Service 
 
-## To Run Project
-- Clone this repo.
-- Run NPM Install Packages
-
 ## Data Flow
+
 - Capture business chat data from listening to business chat MQTT service.
 - Forward and publish the business chat data to Hi App RabbitMQ service.
 - Listen to specific exchange and queue from RabbitMQ service.
@@ -24,20 +21,6 @@
 
 Message Carbon Backend Service requires [Node.js](https://nodejs.org/) v.14 to run.
 
-Install the dependencies and devDependencies and start the server.
-
-For development environment.
-
-```sh
-git clone -b [branch-name] https://gitlab.com/h2188/backend-message-carbon.git
-cd backend-message-carbon
-npm i
-npm run start:dev
-```
-
-For production environment.
-
-```sh
-npm run start
-Configure .env file to target MQTT, RabbitMQ, MongoDB & MariaDB production server.
-```
+- Install the dependencies, devDependencies
+- Assign MQTT Broker, RabbitMQ broker
+- Connect MongoDB and RDMS ( This project use MariaDB )
